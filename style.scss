@@ -15,9 +15,18 @@ header {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  background: linear-gradient(30deg, rgb(255, 0, 179), rgb(0, 247, 255));
+  background: linear-gradient(
+      30deg,
+      rgba(255, 0, 179, 0.884),
+      rgba(0, 247, 255, 0.897)
+    ),
+    url(./img/bg.jpg);
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
+  perspective: 800px;
   #Card {
+    transform-style: preserve-3d;
     width: 30vw;
     min-height: 50vh;
     box-shadow: 1px 2px 10px rgb(26, 26, 26);
@@ -25,16 +34,18 @@ header {
     border-radius: 10px;
     background: linear-gradient(
       45deg,
-      rgba(255, 0, 179, 0.897),
-      rgba(0, 247, 255, 0.87)
+      rgba(255, 0, 179, 0.26),
+      rgba(0, 247, 255, 0.185)
     );
-    backdrop-filter: blur(10px);
+    transition: 0.2s;
+    backdrop-filter: blur(5px);
     color: white;
     #MainImg {
       width: 45%;
       margin: auto;
       img {
         width: 100%;
+        transition: 0.3s;
       }
     }
     #Desc {
@@ -45,6 +56,7 @@ header {
         font-family: 'Comfortaa', cursive;
         color: #4489f4;
         text-shadow: 1px 1px 1px black;
+        transition: 0.2s;
       }
       p {
         font-size: 1.1rem;
@@ -56,6 +68,7 @@ header {
     #Features {
       width: 70%;
       margin: 10px auto;
+      transition: 0.2s;
       p {
         padding: 0px 0px 5px 0px;
         color: #00fd87;
@@ -83,12 +96,14 @@ header {
           background: none;
           border: 2px solid #ffffff;
           color: #ffffff;
+          transition: 0.2s;
           cursor: pointer;
           transition: 0.3s;
           border-radius: 2px;
           &:hover {
-            background: #4489f4;
-            color: white;
+            background: #fff;
+            color: black;
+            box-shadow: 1px 2px 10px black;
           }
         }
       }

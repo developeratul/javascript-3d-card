@@ -16,20 +16,28 @@ header {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  background: linear-gradient(30deg, #ff00b3, #00f7ff);
+  background: linear-gradient(30deg, rgba(255, 0, 179, 0.884), rgba(0, 247, 255, 0.897)), url(./img/bg.jpg);
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
+  -webkit-perspective: 800px;
+          perspective: 800px;
 }
 
 header #Card {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   width: 30vw;
   min-height: 50vh;
   -webkit-box-shadow: 1px 2px 10px #1a1a1a;
           box-shadow: 1px 2px 10px #1a1a1a;
   padding: 20px;
   border-radius: 10px;
-  background: linear-gradient(45deg, rgba(255, 0, 179, 0.897), rgba(0, 247, 255, 0.87));
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  background: linear-gradient(45deg, rgba(255, 0, 179, 0.26), rgba(0, 247, 255, 0.185));
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   color: white;
 }
 
@@ -40,6 +48,8 @@ header #Card #MainImg {
 
 header #Card #MainImg img {
   width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header #Card #Desc {
@@ -52,6 +62,8 @@ header #Card #Desc h2 {
   font-family: 'Comfortaa', cursive;
   color: #4489f4;
   text-shadow: 1px 1px 1px black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 header #Card #Desc p {
@@ -64,6 +76,8 @@ header #Card #Desc p {
 header #Card #Features {
   width: 70%;
   margin: 10px auto;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 header #Card #Features p {
@@ -94,6 +108,8 @@ header #Card #HireButton a button {
   background: none;
   border: 2px solid #ffffff;
   color: #ffffff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -101,8 +117,10 @@ header #Card #HireButton a button {
 }
 
 header #Card #HireButton a button:hover {
-  background: #4489f4;
-  color: white;
+  background: #fff;
+  color: black;
+  -webkit-box-shadow: 1px 2px 10px black;
+          box-shadow: 1px 2px 10px black;
 }
 
 footer {
