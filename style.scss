@@ -16,6 +16,7 @@ header {
   display: grid;
   place-items: center;
   background: linear-gradient(30deg, rgb(255, 0, 179), rgb(0, 247, 255));
+  background-attachment: fixed;
   #Card {
     width: 30vw;
     min-height: 50vh;
@@ -123,6 +124,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  * {
+    cursor: default !important;
+  }
   #Card {
     width: 80vw !important;
   }

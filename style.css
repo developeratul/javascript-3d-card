@@ -17,6 +17,7 @@ header {
   display: grid;
   place-items: center;
   background: linear-gradient(30deg, #ff00b3, #00f7ff);
+  background-attachment: fixed;
 }
 
 header #Card {
@@ -134,6 +135,9 @@ footer p a {
 }
 
 @media screen and (max-width: 768px) {
+  * {
+    cursor: default !important;
+  }
   #Card {
     width: 80vw !important;
   }
