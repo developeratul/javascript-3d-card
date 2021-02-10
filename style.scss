@@ -1,8 +1,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+}
+
+header {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(30deg, rgb(255, 0, 179), rgb(0, 247, 255));
+  #Card {
+    width: 30vw;
+    min-height: 50vh;
+    box-shadow: 1px 2px 10px rgb(26, 26, 26);
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(
+      45deg,
+      rgba(255, 0, 179, 0.897),
+      rgba(0, 247, 255, 0.87)
+    );
+    backdrop-filter: blur(10px);
+    color: white;
+    #MainImg {
+      width: 45%;
+      margin: auto;
+      img {
+        width: 100%;
+      }
+    }
+    #Desc {
+      text-align: center;
+      margin: 15px 0px;
+      h2 {
+        font-size: 2rem;
+        font-family: 'Comfortaa', cursive;
+        color: #4489f4;
+        text-shadow: 1px 1px 1px black;
+      }
+      p {
+        font-size: 1.1rem;
+        font-family: 'Hammersmith One', sans-serif;
+        text-shadow: 1px 1px 10px white;
+        padding-top: 5px;
+      }
+    }
+    #Features {
+      width: 70%;
+      margin: 10px auto;
+      p {
+        padding: 0px 0px 5px 0px;
+        color: #00fd87;
+        font-family: 'Exo 2', sans-serif;
+      }
+      ul {
+        li {
+          list-style: inside none;
+          padding: 2px;
+          font-family: 'Yusei Magic', sans-serif;
+          i {
+            color: #00fd87;
+            padding: 0px 5px;
+          }
+        }
+      }
+    }
+    #HireButton {
+      text-align: center;
+      a {
+        button {
+          padding: 5px 20px;
+          font-size: 1.2rem;
+          outline: none;
+          background: none;
+          border: 2px solid #ffffff;
+          color: #ffffff;
+          cursor: pointer;
+          transition: 0.3s;
+          border-radius: 2px;
+          &:hover {
+            background: #4489f4;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 5px 0px;
+  background: #14a260;
+  color: white;
+  font-size: 1.1rem;
+  p {
+    text-align: center;
+    letter-spacing: 1px;
+    a {
+      text-decoration: none;
+      color: white;
+      text-shadow: 1px 1px 1px white;
+      padding: 0px 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 1099px) {
+  #Card {
+    width: 40vw !important;
+    #Features {
+      width: 80% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #Card {
+    width: 80vw !important;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  #Card {
+    width: 92vw !important;
+    #Features {
+      width: 100% !important;
+    }
+  }
 }

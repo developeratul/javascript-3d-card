@@ -1,9 +1,150 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+}
+
+header {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(30deg, #ff00b3, #00f7ff);
+}
+
+header #Card {
+  width: 30vw;
+  min-height: 50vh;
+  -webkit-box-shadow: 1px 2px 10px #1a1a1a;
+          box-shadow: 1px 2px 10px #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, rgba(255, 0, 179, 0.897), rgba(0, 247, 255, 0.87));
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: white;
+}
+
+header #Card #MainImg {
+  width: 45%;
+  margin: auto;
+}
+
+header #Card #MainImg img {
+  width: 100%;
+}
+
+header #Card #Desc {
+  text-align: center;
+  margin: 15px 0px;
+}
+
+header #Card #Desc h2 {
+  font-size: 2rem;
+  font-family: 'Comfortaa', cursive;
+  color: #4489f4;
+  text-shadow: 1px 1px 1px black;
+}
+
+header #Card #Desc p {
+  font-size: 1.1rem;
+  font-family: 'Hammersmith One', sans-serif;
+  text-shadow: 1px 1px 10px white;
+  padding-top: 5px;
+}
+
+header #Card #Features {
+  width: 70%;
+  margin: 10px auto;
+}
+
+header #Card #Features p {
+  padding: 0px 0px 5px 0px;
+  color: #00fd87;
+  font-family: 'Exo 2', sans-serif;
+}
+
+header #Card #Features ul li {
+  list-style: inside none;
+  padding: 2px;
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+header #Card #Features ul li i {
+  color: #00fd87;
+  padding: 0px 5px;
+}
+
+header #Card #HireButton {
+  text-align: center;
+}
+
+header #Card #HireButton a button {
+  padding: 5px 20px;
+  font-size: 1.2rem;
+  outline: none;
+  background: none;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+header #Card #HireButton a button:hover {
+  background: #4489f4;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 5px 0px;
+  background: #14a260;
+  color: white;
+  font-size: 1.1rem;
+}
+
+footer p {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+footer p a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 1px white;
+  padding: 0px 5px;
+}
+
+@media screen and (max-width: 1099px) {
+  #Card {
+    width: 40vw !important;
+  }
+  #Card #Features {
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #Card {
+    width: 80vw !important;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  #Card {
+    width: 92vw !important;
+  }
+  #Card #Features {
+    width: 100% !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
